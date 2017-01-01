@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ConnectiveSport.MainTabPage">
-	<ContentPage.Content>
-	</ContentPage.Content>
-</ContentPage>
+<local:MainTabPageXaml xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ConnectiveSport.MainTabPage"
+	xmlns:local="clr-namespace:ConnectiveSport"
+	BackgroundColor="{StaticResource grayLight}"
+	Icon="transparent">
+
+
+	<local:MainTabPageXaml.ToolbarItems>
+		<ToolbarItem x:Name="btnJoin" Icon="ic_add_white" AutomationId="joinLeagueButton" />
+		<ToolbarItem Icon="ic_more_vert_white" Clicked="OnMoreClicked" AutomationId="moreButton" />
+	</local:MainTabPageXaml.ToolbarItems>
+
+	
+</local:MainTabPageXaml>

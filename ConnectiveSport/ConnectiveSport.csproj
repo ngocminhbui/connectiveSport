@@ -37,7 +37,7 @@
     <EmbeddedResource Include="Pages\WelcomeAuthentication\EnablePushPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\MainTabbedPage.xaml">
+    <EmbeddedResource Include="Pages\MainTabPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -63,8 +63,8 @@
     <Compile Include="Pages\WelcomeAuthentication\EnablePushPage.xaml.cs">
       <DependentUpon>EnablePushPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MainTabbedPage.xaml.cs">
-      <DependentUpon>MainTabbedPage.xaml</DependentUpon>
+    <Compile Include="Pages\MainTabPage.xaml.cs">
+      <DependentUpon>MainTabPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
