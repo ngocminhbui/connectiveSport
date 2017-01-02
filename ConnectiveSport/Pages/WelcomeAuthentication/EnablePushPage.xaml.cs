@@ -35,7 +35,7 @@ namespace ConnectiveSport
 		async Task MoveToMainPage()
 		{
 			//Settings.RegistrationComplete = true;
-			var page = new Test();
+			var page = new MainTabPage();
 			////await page.LoadLeagues();
 
 			//await Task.Delay(200);

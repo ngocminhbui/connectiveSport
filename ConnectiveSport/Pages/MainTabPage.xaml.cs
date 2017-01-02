@@ -9,17 +9,22 @@ namespace ConnectiveSport
 	{
 		public MainTabPage()
 		{
-			InitializeComponent();
+			Initialize();
 
-		
+
 		}
 
-	
+		void Initialize()
+		{
+			InitializeComponent();
+			Children.Add(new LeaguesPage());
+			Children.Add(new LeaguesPage());
+			Children.Add(new LeaguesPage());
 
-	
+		}
 	}
 
-	public partial class MainTabPageXaml : BaseContentPage<BaseViewModel>
+	public partial class MainTabPageXaml : TabbedPage
 	{
 
 	}
