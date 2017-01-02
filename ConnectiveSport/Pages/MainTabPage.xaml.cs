@@ -10,13 +10,12 @@ namespace ConnectiveSport
 		public MainTabPage()
 		{
 			InitializeComponent();
+
+		
 		}
 
 	
-		async void OnMoreClicked(object sender, EventArgs e)
-		{
-			
-		}
+
 	
 	}
 

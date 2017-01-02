@@ -40,6 +40,9 @@
     <EmbeddedResource Include="Pages\MainTabPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Test.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -65,6 +68,9 @@
     </Compile>
     <Compile Include="Pages\MainTabPage.xaml.cs">
       <DependentUpon>MainTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
