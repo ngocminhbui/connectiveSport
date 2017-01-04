@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ConnectiveSport.LeagueListView"
+	x:Name="list"
+	AutomationId="leagueList"
+	BackgroundColor="{StaticResource grayLight}"
+	SeparatorVisibility="None"
+	HasUnevenRows="true"
+	xmlns:local="clr-namespace:ConnectiveSport">
+
+	<ListView.ItemTemplate>
+		<DataTemplate>
+			<ViewCell>
+				<ViewCell.View>
+					<AbsoluteLayout>
+
+						<StackLayout Padding="0,0,.5,.5" BackgroundColor="{StaticResource grayPrimary}"
+							AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+
+							<StackLayout AutomationId="leagueRow" Orientation="Vertical" BackgroundColor="White" Spacing="0" VerticalOptions="FillAndExpand">
+								<AbsoluteLayout HeightRequest="150">
+									
+									<Image x:Name="photoImage" Source="{Binding ImageURL}" Aspect="AspectFill"
+										AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Opacity="1" />
+
+								</AbsoluteLayout>
+
+								<StackLayout Padding="16,10" Spacing="4">
+ 									<Label Text="{Binding Name}" FontSize="Large" TextColor="{Binding League.Theme.Dark}" VerticalOptions="CenterAndExpand" />
+									
+								</StackLayout>
+							</StackLayout>
+						</StackLayout>
+
+
+						
+					</AbsoluteLayout>
+				</ViewCell.View>
+			</ViewCell>
+		</DataTemplate>
+	</ListView.ItemTemplate>
+
+
+</ListView>
