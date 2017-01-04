@@ -46,6 +46,9 @@
     <EmbeddedResource Include="UserControls\LeagueListView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\GuidePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -79,6 +82,12 @@
       <DependentUpon>LeagueListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\League.cs" />
+    <Compile Include="Pages\GuidePage.xaml.cs">
+      <DependentUpon>GuidePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\GuidePageViewModel.cs" />
+    <Compile Include="Models\Sport.cs" />
+    <Compile Include="ViewModels\SportViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

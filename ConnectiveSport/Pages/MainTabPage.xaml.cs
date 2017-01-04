@@ -18,7 +18,7 @@ namespace ConnectiveSport
 		{
 			Title = "Sport Centre";
 			InitializeComponent();
-			Children.Add(new LeaguesPage());
+			Children.Add(new GuidePage());
 			Children.Add(new LeaguesPage());
 			Children.Add(new LeaguesPage());
 
