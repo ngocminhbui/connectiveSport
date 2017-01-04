@@ -6,11 +6,11 @@ namespace ConnectiveSport
 {
 	public class League
 	{
-		public string Name { get; private set; }
+		public string Name { get; set; }
 
-		public string ImageURL { get; private set; }
+		public string ImageURL { get;  set; }
 
-		public bool IsAcitivated { get; private set; }
+		public bool IsAcitivated { get;  set; }
 
 
 
