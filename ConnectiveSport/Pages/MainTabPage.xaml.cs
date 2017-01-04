@@ -18,9 +18,6 @@ namespace ConnectiveSport
 		{
 			InitializeComponent();
 			Children.Add(new LeaguesPage());
-			Children.Add(new LeaguesPage());
-			Children.Add(new LeaguesPage());
-
 		}
 	}
 
