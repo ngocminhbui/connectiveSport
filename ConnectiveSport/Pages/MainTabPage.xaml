@@ -11,6 +11,10 @@
 	</TabbedPage.Children>
 
        
+	<local:MainTabPageXaml.ToolbarItems>
+		<ToolbarItem Icon="ic_more_vert_white" Clicked="OnMoreClicked" AutomationId="moreButton" />
+	</local:MainTabPageXaml.ToolbarItems>
+
 	
 </local:MainTabPageXaml>
 	

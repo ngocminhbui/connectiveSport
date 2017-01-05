@@ -10,4 +10,9 @@
 			IsRefreshing="{Binding IsBusy, Mode=OneWay}" />
 	</local:LeaguesPageXaml.Content>
 
+	<local:LeaguesPageXaml.ToolbarItems>
+		<ToolbarItem x:Name="btnJoin" Icon="ic_add_white" AutomationId="joinLeagueButton" />
+	</local:LeaguesPageXaml.ToolbarItems>
+
+	
 </local:GuidePageXaml>

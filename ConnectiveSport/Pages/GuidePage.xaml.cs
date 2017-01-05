@@ -48,6 +48,8 @@ namespace ConnectiveSport
 			DisplayAlert("DF SElected", vm.Name, "ok");
 
 		}
+
+
 	}
 	public partial class GuidePageXaml : BaseContentPage<GuidePageViewModel>
 	{

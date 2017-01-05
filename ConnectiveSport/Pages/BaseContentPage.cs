@@ -37,8 +37,8 @@ namespace ConnectiveSport
 		public MainBaseContentPage()
 		{
 			BarBackgroundColor = (Color)Application.Current.Resources["grayPrimary"];
-			BarTextColor = Color.White;
-			BackgroundColor = Color.White;
+			BarTextColor = Color.Black;
+			BackgroundColor = Color.Black;
 		}
 
 		public NavigationPage WithinNavigationPage()
@@ -53,6 +53,21 @@ namespace ConnectiveSport
 		{
 			nav.BarBackgroundColor = BarBackgroundColor;
 			nav.BarTextColor = BarTextColor;
+		}
+
+
+		public void AddDoneButton(string text = "Done", ContentPage page = null)
+		{
+			var btnDone = new ToolbarItem
+			{
+				Text = text,
+			};
+
+			btnDone.Clicked += async (sender, e) =>
+			await Navigation.PopModalAsync();
+
+			page = page ?? this;
+			page.ToolbarItems.Add(btnDone);
 		}
 	}
 }
