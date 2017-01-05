@@ -5,11 +5,47 @@
 	BackgroundColor="{StaticResource grayLight}"
 	xmlns:local="clr-namespace:ConnectiveSport"
 	xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss">
+
+	<local:SettingPageXaml.Content>
+		<Grid VerticalOptions="Fill" HorizontalOptions="Fill">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+
+
+
+			<StackLayout x:Name="upperStack" Grid.Row="0" Scale="1" VerticalOptions="CenterAndExpand" Spacing="50">
+				<Label Margin="40,0" FontSize="Medium" XAlign="Center"
+					Text="Much obliged if you'd kindly enable push notifications. You'll be notified of new challenge requests and when someone in your leage wins a challenge. Much cool!" />
+
+				<StackLayout  VerticalOptions="StartAndExpand" Orientation="Horizontal" Margin="40,0">
+					<Label FontSize="Medium" XAlign="Center" HorizontalOptions="StartAndExpand"
+						Text="Enable notifications" VerticalOptions="Center" />
+					
+					<Switch Toggled="OnEnableNotiToggled" IsToggled="{Binding EnablePushNotifications}" xfg:SwitchGloss.OnTintColor="#6FFF" HorizontalOptions="End" VerticalOptions="Center" />
+				</StackLayout>
+			</StackLayout>
+
+			<StackLayout x:Name="CenterStack" Grid.Row="1" Scale="1" VerticalOptions="CenterAndExpand" Spacing="50">
+				<Label Margin="40,0" FontSize="Medium" XAlign="Center"
+					Text="Share your profile to other athletes. BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH" />
+
+				<StackLayout  VerticalOptions="StartAndExpand" Orientation="Horizontal" Margin="40,0">
+					<Label FontSize="Medium" XAlign="Center" HorizontalOptions="StartAndExpand"
+						Text="Enable Sharing" VerticalOptions="Center" />
+					
+					<Switch Toggled="OnSharingToggled" IsToggled="{Binding EnableSharing}" xfg:SwitchGloss.OnTintColor="#6FFF" HorizontalOptions="End" VerticalOptions="Center" />
+				</StackLayout>
+			</StackLayout>
+
+		</Grid>
+	</local:SettingPageXaml.Content>
 	
-	<TextCell Text="Red" xfg:CellGloss.TintColor="Red" xfg:CellGloss.AccessoryType="Checkmark" />
+	
 
-	<SwitchCell Text="Red" xfg:CellGloss.TintColor="Red" />
 
-	<Switch xfg:SwitchGloss.TintColor="Red" />
+
 
 </local:SettingPageXaml>

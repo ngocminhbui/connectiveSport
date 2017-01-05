@@ -37,8 +37,8 @@ namespace ConnectiveSport
 		public MainBaseContentPage()
 		{
 			BarBackgroundColor = (Color)Application.Current.Resources["grayPrimary"];
-			BarTextColor = Color.Black;
-			BackgroundColor = Color.Black;
+			BarTextColor = Color.White;
+			BackgroundColor = Color.White;
 		}
 
 		public NavigationPage WithinNavigationPage()

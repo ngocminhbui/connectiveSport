@@ -10,6 +10,19 @@ namespace ConnectiveSport
 		public SettingPage()
 		{
 			InitializeComponent();
+			Title = "Setting";
+
+		}
+
+		void OnSharingToggled(object sender, Xamarin.Forms.ToggledEventArgs e)
+		{
+			DisplayAlert("df", "DF", "DF");
+		}
+
+		void OnEnableNotiToggled(object sender, Xamarin.Forms.ToggledEventArgs e)
+		{
+			DisplayAlert("df", "DF", "DF");
+
 		}
 	}
 
