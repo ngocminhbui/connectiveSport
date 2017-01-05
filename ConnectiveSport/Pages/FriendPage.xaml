@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<local:FriendPageXaml xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ConnectiveSport.FriendPage"
+	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+	BackgroundColor="{StaticResource grayLight}"
+	xmlns:local="clr-namespace:ConnectiveSport">
+	
+
+	<local:FriendPageXaml.Content>
+		<ListView x:Name="list" AutomationId="leaderboardList" BackgroundColor="White" RowHeight="180" SeparatorColor="{StaticResource grayPrimary}"
+			IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+					<!--<ViewCell.ContextActions>
+						    <MenuItem Clicked="OnChallengeClicked" Text="Challenge" />
+						</ViewCell.ContextActions>-->
+						<ViewCell.View>
+							<Grid AutomationId="memberItemRoot">
+								
+								<StackLayout Padding="24,16,16,16" Spacing="20" Orientation="Horizontal" VerticalOptions="Center">
+
+
+									<StackLayout Spacing="20" Orientation="Horizontal">
+										<AbsoluteLayout WidthRequest="48" HeightRequest="48" HorizontalOptions="Start" VerticalOptions="Center">
+											<controls:CircleImage WidthRequest="36" HeightRequest="36" Source="{Binding ImageURL}"
+												HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill"
+												AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,-1,-1" />
+										</AbsoluteLayout>
+
+										<StackLayout Spacing="0" VerticalOptions="Center">
+											<Label Text="{Binding Alias}" FontSize="Medium" LineBreakMode="TailTruncation" />
+											<Label Text="{Binding Name}" FontSize="Micro" TextColor="{StaticResource grayPrimary}"  LineBreakMode="TailTruncation" />
+											<Label Text="Challenged You" FontSize="Micro" TextColor="{StaticResource grayPrimary}"  LineBreakMode="TailTruncation" />
+											<Label Text="Played Soccer 2 hours ago" FontSize="Micro" TextColor="{StaticResource grayPrimary}"  LineBreakMode="TailTruncation" />
+
+											<Grid>
+											  <Grid.RowDefinitions>
+											    <RowDefinition Height="*" />
+											  </Grid.RowDefinitions>
+											  <Grid.ColumnDefinitions>
+											    <ColumnDefinition Width="*" />
+											    <ColumnDefinition Width="*" />
+											  </Grid.ColumnDefinitions>
+
+											 	<Button Clicked="AcceptChallengeClicked" Text="Accept Challenge" FontSize="Micro" IsVisible="true" Grid.Row="0" Grid.Column="0"/>
+												<Button Clicked="ChallengeClicked" Text="Challenge" FontSize="Micro" BackgroundColor="Lime" IsVisible="true" Grid.Row="0" Grid.Column="1"/>
+											
+												
+											</Grid>
+
+										</StackLayout>
+
+
+										
+									</StackLayout>
+								</StackLayout>
+							</Grid>
+						</ViewCell.View>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</local:FriendPageXaml.Content>
+
+	
+</local:FriendPageXaml>

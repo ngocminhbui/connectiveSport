@@ -13,6 +13,11 @@ namespace ConnectiveSport
 			Initialize();
 		}
 
+		//void OnSearchTextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+		//{
+		//	ViewModel.SportsVM.RemoveAt(0);
+
+		//}
 
 
 		protected override void OnAppearing()

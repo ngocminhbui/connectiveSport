@@ -51,7 +51,7 @@ namespace ConnectiveSport
 
 		public void ApplyTheme(NavigationPage nav)
 		{
-			nav.BarBackgroundColor = BarBackgroundColor;
+			nav.BarBackgroundColor = Color.Black;
 			nav.BarTextColor = BarTextColor;
 		}
 

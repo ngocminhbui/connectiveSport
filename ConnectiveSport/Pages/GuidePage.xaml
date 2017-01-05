@@ -5,14 +5,29 @@
 	BackgroundColor="{StaticResource grayLight}"
 	xmlns:local="clr-namespace:ConnectiveSport">
 	
-	<local:LeaguesPageXaml.Content>
+	<local:GuidePageXaml.Content>
+
+
+		<StackLayout>
+
+		<Label FontSize="Large" Text="Indoor/Outdoor"/>
 		<local:LeagueListView x:Name="list" ItemsSource="{Binding Leagues}" RefreshCommand="{Binding GetAvailableLeaguesCommand}"
 			IsRefreshing="{Binding IsBusy, Mode=OneWay}" />
-	</local:LeaguesPageXaml.Content>
 
-	<local:LeaguesPageXaml.ToolbarItems>
+		<Label FontSize="Large" Text="Followers"/>
+
+
+
+		<Label FontSize="Large" Text="Area"/>
+
+			
+		</StackLayout>
+
+	</local:GuidePageXaml.Content>
+
+	<local:GuidePageXaml.ToolbarItems>
 		<ToolbarItem x:Name="btnJoin" Icon="ic_add_white" AutomationId="joinLeagueButton" />
-	</local:LeaguesPageXaml.ToolbarItems>
+	</local:GuidePageXaml.ToolbarItems>
 
 	
 </local:GuidePageXaml>

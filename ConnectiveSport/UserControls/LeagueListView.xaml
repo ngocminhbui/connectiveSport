@@ -15,7 +15,7 @@
 				<ViewCell.View>
 					<AbsoluteLayout>
 
-						<StackLayout Padding="0,0,.5,.5" BackgroundColor="{StaticResource grayPrimary}"
+						<StackLayout Padding="8,5" BackgroundColor="{StaticResource grayPrimary}"
 							AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
 							<StackLayout AutomationId="leagueRow" Orientation="Vertical" BackgroundColor="White" Spacing="0" VerticalOptions="FillAndExpand">
@@ -28,8 +28,27 @@
 
 								<StackLayout Padding="16,10" Spacing="4">
  									<Label Text="{Binding Name}" FontSize="Large" TextColor="{Binding League.Theme.Dark}" VerticalOptions="CenterAndExpand" />
+									<Label Text="Type:Indoor activity" FontSize="Large" TextColor="{Binding League.Theme.Dark}" VerticalOptions="CenterAndExpand" />
+									<Label Text="Follower: 40039" FontSize="Large" TextColor="{Binding League.Theme.Dark}" VerticalOptions="CenterAndExpand" />
+
+									<Grid>
+									  <Grid.RowDefinitions>
+									    <RowDefinition Height="*" />
+									  </Grid.RowDefinitions>
+									  <Grid.ColumnDefinitions>
+									    <ColumnDefinition Width="*" />
+									    <ColumnDefinition Width="*" />
+									  </Grid.ColumnDefinitions>
+
+									 	<Button Text="Join" IsVisible="true" Grid.Row="0" Grid.Column="0"/>
+										<Button Text="Practice" IsVisible="true" Grid.Row="0" Grid.Column="1"/>
 									
+										
+									</Grid>
+							
+										
 								</StackLayout>
+
 							</StackLayout>
 						</StackLayout>
 

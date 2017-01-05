@@ -4,6 +4,8 @@
             xmlns:local="clr-namespace:ConnectiveSport;assembly=ConnectiveSport"
             x:Class="ConnectiveSport.MainTabPage">
 
+	
+	
 	<TabbedPage.Children>
 
 
