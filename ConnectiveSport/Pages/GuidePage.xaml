@@ -10,18 +10,23 @@
 
 		<StackLayout>
 
-		<Label FontSize="Large" Text="Indoor/Outdoor"/>
-		<local:LeagueListView x:Name="list" ItemsSource="{Binding Leagues}" RefreshCommand="{Binding GetAvailableLeaguesCommand}"
-			IsRefreshing="{Binding IsBusy, Mode=OneWay}" />
+			<Label FontSize="Large" Text="Indoor/Outdoor"/>
+			<local:LeagueListView x:Name="Indoorlist" ItemsSource="{Binding Leagues}" RefreshCommand="{Binding GetAvailableLeaguesCommand}"
+				IsRefreshing="{Binding IsBusy, Mode=OneWay}" />
 
-		<Label FontSize="Large" Text="Followers"/>
+			<Label FontSize="Large" Text="Followers"/>
+
+			<local:LeagueListView x:Name="Followerlist" ItemsSource="{Binding Leagues}" RefreshCommand="{Binding GetAvailableLeaguesCommand}"
+				IsRefreshing="{Binding IsBusy, Mode=OneWay}" IsVisible="false" />
 
 
+			<Label FontSize="Large" Text="Area"/>
 
-		<Label FontSize="Large" Text="Area"/>
-
+				<local:LeagueListView x:Name="Arealist" ItemsSource="{Binding Leagues}" RefreshCommand="{Binding GetAvailableLeaguesCommand}"
+				IsRefreshing="{Binding IsBusy, Mode=OneWay}" IsVisible="false" />
 			
 		</StackLayout>
+
 
 	</local:GuidePageXaml.Content>
 

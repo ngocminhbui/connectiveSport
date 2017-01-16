@@ -8,6 +8,10 @@
 	
 
 	<local:FriendPageXaml.Content>
+
+		
+
+		
 		<ListView x:Name="list" AutomationId="leaderboardList" BackgroundColor="White" RowHeight="180" SeparatorColor="{StaticResource grayPrimary}"
 			IsRefreshing="{Binding IsBusy, Mode=OneWay}">
 			<ListView.ItemTemplate>
@@ -62,6 +66,9 @@
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</ListView>
+
+
+	
 	</local:FriendPageXaml.Content>
 
 	

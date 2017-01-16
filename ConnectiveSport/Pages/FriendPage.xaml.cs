@@ -13,13 +13,15 @@ namespace ConnectiveSport
 
 		}
 
-		void AcceptChallengeClicked(object sender, System.EventArgs e)
+		async void AcceptChallengeClicked(object sender, System.EventArgs e)
 		{
-			throw new NotImplementedException();
+			var page = new PracticePage();
+
+			await Navigation.PushAsync(page);
 		}
-		void ChallengeClicked(object sender, System.EventArgs e)
+		async void ChallengeClicked(object sender, System.EventArgs e)
 		{
-			throw new NotImplementedException();
+			
 
 		}
 

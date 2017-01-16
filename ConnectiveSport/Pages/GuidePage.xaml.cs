@@ -24,31 +24,35 @@ namespace ConnectiveSport
 		{
 			base.OnAppearing();
 
-			list.ItemSelected += OnListItemSelected;
+			Indoorlist.ItemSelected += OnListItemSelected;
 
 		}
 
 		void Initialize()
 		{
 			InitializeComponent();
+
 			Title = "Guide";
 
 			LoadLeagues();
 		}
 
+
 		public void LoadLeagues()
 		{
 			ViewModel.GetAvailableSportGuides();
-			list.ItemsSource = ViewModel.SportsVM;
+			Indoorlist.ItemsSource = ViewModel.SportsVM;
+			//Arealist.ItemsSource = ViewModel.SportsVM;
+			//Followerlist.ItemsSource = ViewModel.SportsVM;
 		}
 
 
 		async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{
-			if (list.SelectedItem == null)
+			if (Indoorlist.SelectedItem == null)
 				return;
 
-			var vm = list.SelectedItem as SportViewModel;
+			var vm = Indoorlist.SelectedItem as SportViewModel;
 
 			DisplayAlert("DF SElected", vm.Name, "ok");
 

@@ -15,5 +15,18 @@ namespace ConnectiveSport
 
 
 		}
+
+		async void Practice_Clicked(object sender, System.EventArgs e)
+		{
+			var page = new PracticePage();
+
+			await Navigation.PushAsync(page);
+		}
+		void Join_Clicked(object sender, System.EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+
 	}
 }

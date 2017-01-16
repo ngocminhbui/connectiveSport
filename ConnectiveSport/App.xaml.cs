@@ -1,5 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
+using Xamarin.Auth;
+using Facebook;
 
 namespace ConnectiveSport
 {
@@ -38,7 +40,10 @@ namespace ConnectiveSport
 
 		void StartAuthenticationFlow()
 		{
-			throw new NotImplementedException();
+
+
+
+
 		}
 
 		void StartRegistrationFlow()

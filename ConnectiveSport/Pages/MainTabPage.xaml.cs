@@ -18,6 +18,9 @@ namespace ConnectiveSport
 		{
 			Title = "Sport Centre";
 			InitializeComponent();
+
+			BarBackgroundColor = Color.Black;
+
 			Children.Add(new GuidePage());
 			Children.Add(new FriendPage());
 			Children.Add(new GoalPage());
@@ -92,7 +95,7 @@ namespace ConnectiveSport
 
 	public partial class MainTabPageXaml : TabbedPage
 	{
-
+			
 	}
 
 }

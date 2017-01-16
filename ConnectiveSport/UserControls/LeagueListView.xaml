@@ -40,8 +40,8 @@
 									    <ColumnDefinition Width="*" />
 									  </Grid.ColumnDefinitions>
 
-									 	<Button Text="Join" IsVisible="true" Grid.Row="0" Grid.Column="0"/>
-										<Button Text="Practice" IsVisible="true" Grid.Row="0" Grid.Column="1"/>
+									 	<Button Clicked="Join_Clicked" Text="Join" IsVisible="true" Grid.Row="0" Grid.Column="0"/>
+										<Button Clicked="Practice_Clicked" Text="Practice" IsVisible="true" Grid.Row="0" Grid.Column="1"/>
 									
 										
 									</Grid>
