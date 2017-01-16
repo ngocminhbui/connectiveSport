@@ -2,17 +2,69 @@
 <local:GoalPageXaml xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="ConnectiveSport.GoalPage"
+	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 	BackgroundColor="{StaticResource grayLight}"
+	xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
 	xmlns:local="clr-namespace:ConnectiveSport">
+
+	<xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="141">
+           <xfg:GradientStep StepColor="#0fb8ad" StepPercentage="0" />
+           <xfg:GradientStep StepColor="#1fc8db" StepPercentage="0.51" />
+			<xfg:GradientStep StepColor="#2cb5e8" StepPercentage="0.75" />
+      </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+
+
 	
 	<local:GoalPageXaml.Content>
 
-		<Label Text="Goal page"/>
+		<StackLayout>
+
+		
+		<ListView x:Name="list" BackgroundColor="Transparent" RowHeight="180" SeparatorColor="{StaticResource grayPrimary}"
+			IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>	
+						<ViewCell.View>
+							<Grid>
+								
+								<StackLayout Padding="24,16,16,16" Spacing="20" Orientation="Horizontal" VerticalOptions="Center">
+
+
+									<StackLayout Spacing="20" Orientation="Horizontal">
+										<AbsoluteLayout WidthRequest="48" HeightRequest="48" HorizontalOptions="Start" VerticalOptions="Center">
+											<controls:CircleImage WidthRequest="36" HeightRequest="36" Source="https://d30y9cdsu7xlg0.cloudfront.net/png/117084-200.png"
+												HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill"
+												AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds=".5,.5,-1,-1" />
+										</AbsoluteLayout>
+
+										<StackLayout Spacing="0" VerticalOptions="Center">
+											<Label Text="{Binding Sport}" FontSize="Medium"  TextColor="White" LineBreakMode="TailTruncation" />
+											<Label Text="{Binding Type}" FontSize="Medium" TextColor="White"  LineBreakMode="TailTruncation" />
+											<Label Text="{Binding Content}" FontSize="Medium" TextColor="White"  LineBreakMode="TailTruncation" />
+
+											<local:SportButton IsVisible="{Binding IsInCompleted}" x:Name="btnSave" Text="Mark as Completed" BackgroundColor="Green" Style="{StaticResource wizardButton}"/>
+										</StackLayout>
+
+
+										
+									</StackLayout>
+								</StackLayout>
+							</Grid>
+						</ViewCell.View>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+
+	</StackLayout>
 
 	</local:GoalPageXaml.Content>
 
 	<local:GoalPageXaml.ToolbarItems>
-		<ToolbarItem x:Name="btnJoin" Icon="ic_add_white" AutomationId="joinLeagueButton" />
+		<ToolbarItem x:Name="btnJoin" Clicked="Add_Clicked" Icon="ic_add_white" AutomationId="joinLeagueButton" />
 	</local:GoalPageXaml.ToolbarItems>
 
 	

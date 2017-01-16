@@ -8,15 +8,6 @@
 	<local:ChallengePageXaml.Content>
 
 
-		<Picker IsVisible="false" IsEnabled="false" x:Name="sportPicker">
-
-			<Picker.Items>
-            <x:String>1</x:String> 
-            <x:String>2</x:String>
-       		</Picker.Items>
-			
-		</Picker>
-
 	</local:ChallengePageXaml.Content>
 
 	<local:ChallengePageXaml.ToolbarItems>

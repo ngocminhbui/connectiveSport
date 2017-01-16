@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<local:AddGoalPageXaml xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ConnectiveSport.AddGoalPage"
+	BackgroundColor="{StaticResource grayLight}"
+	xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+	xmlns:local="clr-namespace:ConnectiveSport">
+
+
+	<xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+           <xfg:GradientStep StepColor="#512DA8" StepPercentage="0" />
+           <xfg:GradientStep StepColor="#7B1FA2" StepPercentage="1" />
+      </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+
+	
+	
+	<local:AddGoalPageXaml.Content>
+
+		<StackLayout>
+
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="40,8" HeightRequest="56" HorizontalOptions="Fill">
+							<Label Text="Sport:" TextColor="White" VerticalOptions="Center" FontSize="Large" />
+
+
+							<Picker x:Name="SportPicker" HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" >
+						        <Picker.Items>
+						            <x:String>1</x:String> 
+						            <x:String>2</x:String>
+						        </Picker.Items>
+						     </Picker> 
+
+					
+						
+			</StackLayout>
+
+			
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="40,8" HeightRequest="56" HorizontalOptions="Fill">
+							<Label Text="Goal Type:" TextColor="White" VerticalOptions="Center" FontSize="Large" />
+
+
+							<Picker x:Name="Type" HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" >
+						        <Picker.Items>
+						            <x:String>Date</x:String> 
+						            <x:String>Month</x:String>
+									<x:String>Year</x:String>
+						        </Picker.Items>
+						     </Picker> 
+
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="40,8" HeightRequest="156" HorizontalOptions="Fill">
+							<Label Text="Content:" TextColor="White" VerticalOptions="Center" FontSize="Large" />
+
+							<Editor x:Name="GoalContent" Text="I am an Editor" HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" HeightRequest="150"/>
+
+
+			</StackLayout>
+
+
+
+			<local:SportButton x:Name="btnSave" Text="SAVE" Style="{StaticResource wizardButton}" VerticalOptions="End" />
+			
+		</StackLayout>
+
+	</local:AddGoalPageXaml.Content>
+
+</local:AddGoalPageXaml>

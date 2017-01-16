@@ -67,6 +67,9 @@
     <EmbeddedResource Include="Pages\ChallengePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AddGoalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -129,6 +132,12 @@
     <Compile Include="Pages\ChallengePage.xaml.cs">
       <DependentUpon>ChallengePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddGoalPage.xaml.cs">
+      <DependentUpon>AddGoalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AddGoalPageViewModel.cs" />
+    <Compile Include="Models\Goal.cs" />
+    <Compile Include="ViewModels\GoalViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Plugin.Settings.Abstractions">

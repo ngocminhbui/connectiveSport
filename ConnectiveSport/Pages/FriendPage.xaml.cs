@@ -29,7 +29,6 @@ namespace ConnectiveSport
 		{
 			InitializeComponent();
 
-
 			Title = "Friendlist";
 			this.LoadFriendList();
 
