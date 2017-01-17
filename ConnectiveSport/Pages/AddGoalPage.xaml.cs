@@ -12,6 +12,7 @@ namespace ConnectiveSport
 			InitializeComponent();
 			//Label s = new Label();
 			//s.Text = "DFFDFDFFDFDFDF";
+			LoadContent();
 			LoadItemsForSportPicker();
 			LoadItemsForTypePicker();
 
@@ -20,14 +21,26 @@ namespace ConnectiveSport
 			SportPicker.SelectedIndex = 2;
 		}
 
+		void LoadContent()
+		{
+			ViewModel.LoadLists();
+		}
+
 		void LoadItemsForTypePicker()
 		{
-			
+			foreach (string s in ViewModel.TypesList)
+			{
+				SportPicker.Items.Add(s);
+			}
+
 		}
 
 		void LoadItemsForSportPicker()
 		{
-			throw new NotImplementedException();
+			foreach (string s in ViewModel.SportsList)
+			{
+				SportPicker.Items.Add(s);
+			}	
 		}
 
 		void Save_Clicked(object sender, System.EventArgs e)
