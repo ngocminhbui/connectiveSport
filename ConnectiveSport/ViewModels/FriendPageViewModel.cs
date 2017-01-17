@@ -25,6 +25,8 @@ namespace ConnectiveSport
 			FriendsList.Add(new AthleteProfileViewModel(new Athelete { Name = "An Luong", Alias = "An cute :v" ,ImageURL = "http://findicons.com/files/icons/1072/face_avatars/300/a04.png" }));
 			FriendsList.Add(new AthleteProfileViewModel(new Athelete { Name = "Le Do", Alias = "Le cute :v", ImageURL = "http://findicons.com/files/icons/1072/face_avatars/300/a04.png" }));
 			FriendsList.Add(new AthleteProfileViewModel(new Athelete { Name = "Minh Bui", Alias = "Minh :v", ImageURL = "http://findicons.com/files/icons/1072/face_avatars/300/a04.png" }));
+
+			SqlDatabase.Instance.Database.GetType();
 		}
 	}
 }

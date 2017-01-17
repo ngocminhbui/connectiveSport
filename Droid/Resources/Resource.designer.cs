@@ -1811,7 +1811,6 @@ namespace ConnectiveSport.Droid
 			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_id = global::ConnectiveSport.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ConnectiveSport.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::ConnectiveSport.Droid.Resource.Styleable.ViewStubCompat_android_layout;
-			global::FacebookMonoDroid.Resource.String.library_name = global::ConnectiveSport.Droid.Resource.String.library_name;
 			global::PCLCrypto.Resource.String.ApplicationName = global::ConnectiveSport.Droid.Resource.String.ApplicationName;
 			global::PCLCrypto.Resource.String.Hello = global::ConnectiveSport.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ConnectiveSport.Droid.Resource.Attribute.actionBarSize;

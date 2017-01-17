@@ -31,6 +31,7 @@ namespace ConnectiveSport
 			SportsVM.Add(new SportViewModel(new Sport { Name = "Swimming", ImageURL = "http://www.top10base.com/wp-content/uploads/2014/08/play-sports.png" }));
 			SportsVM.Add(new SportViewModel(new Sport { Name = "Punching", ImageURL = "http://www.top10base.com/wp-content/uploads/2014/08/play-sports.png" }));
 			SportsVM.Add(new SportViewModel(new Sport { Name = "Hitting", ImageURL = "http://goqii.com/blog/wp-content/uploads/all-sports.png" }));
+			Goal g = new Goal();
 
 		}		 
 
