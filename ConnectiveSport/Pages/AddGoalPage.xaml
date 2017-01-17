@@ -61,7 +61,9 @@
 
 
 
-			<local:SportButton Clicked="Handle_Clicked" x:Name="btnSave" Text="SAVE" Style="{StaticResource wizardButton}" VerticalOptions="End" />
+
+			<local:SportButton Clicked="Save_Clicked" x:Name="btnSave" Text="SAVE" Style="{StaticResource wizardButton}" VerticalOptions="End" />
+
 			
 		</StackLayout>
 

@@ -1811,10 +1811,12 @@ namespace ConnectiveSport.Droid
 			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_id = global::ConnectiveSport.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ConnectiveSport.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::ConnectiveSport.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+
+			global::FacebookMonoDroid.Resource.String.library_name = global::ConnectiveSport.Droid.Resource.String.library_name;
 			global::PCLCrypto.Resource.String.ApplicationName = global::ConnectiveSport.Droid.Resource.String.ApplicationName;
 			global::PCLCrypto.Resource.String.Hello = global::ConnectiveSport.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ConnectiveSport.Droid.Resource.Attribute.actionBarSize;
-			global::FacebookMonoDroid.Resource.String.library_name = global::ConnectiveSport.Droid.Resource.String.library_name;
+
 		}
 		
 		public partial class Animation
@@ -5028,11 +5030,19 @@ namespace ConnectiveSport.Droid
 		public partial class String
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f070047
 			public const int ApplicationName = 2131165255;
 			
 			// aapt resource value: 0x7f070046
 			public const int Hello = 2131165254;
+=======
+			// aapt resource value: 0x7f070046
+			public const int ApplicationName = 2131165254;
+			
+			// aapt resource value: 0x7f070045
+			public const int Hello = 2131165253;
+>>>>>>> master
 			
 			// aapt resource value: 0x7f070031
 			public const int abc_action_bar_home_description = 2131165233;
@@ -5193,8 +5203,13 @@ namespace ConnectiveSport.Droid
 			// aapt resource value: 0x7f07001b
 			public const int common_signin_button_text_long = 2131165211;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f070045
 			public const int library_name = 2131165253;
+=======
+			// aapt resource value: 0x7f070047
+			public const int library_name = 2131165255;
+>>>>>>> master
 			
 			// aapt resource value: 0x7f07001f
 			public const int mr_button_content_description = 2131165215;
