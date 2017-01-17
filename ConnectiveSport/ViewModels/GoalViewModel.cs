@@ -21,7 +21,7 @@ namespace ConnectiveSport
 
 		public GoalViewModel(Goal a)
 		{
-			this.Sport = a.Sport.Name;
+			//this.Sport = a.Sport.Name;
 			this.Type = a.GoalType;
 			this.Content = a.Content;
 			this.IsInCompleted = !a.IsCompleted;

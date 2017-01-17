@@ -45,7 +45,7 @@ namespace ConnectiveSport
 
 		public virtual async Task<bool> UpsertAsync(T item)
 		{
-			if (item.Id == null)
+			if (item.Idd == null)
 			{
 				return await InsertAsync(item);
 			}
@@ -63,7 +63,7 @@ namespace ConnectiveSport
 
 			if (push)
 			{
-				var updated = await GetItemAsync(item.Id, false).ConfigureAwait(false);
+				var updated = await GetItemAsync(item.Idd, false).ConfigureAwait(false);
 
 			}
 
@@ -80,7 +80,7 @@ namespace ConnectiveSport
 			var pull = await PullLatestAsync().ConfigureAwait(false);
 			await Table.UpdateAsync(item).ConfigureAwait(false);
 			var push = await SyncAsync().ConfigureAwait(false);
-			var updated = await GetItemAsync(item.Id, false).ConfigureAwait(false);
+			var updated = await GetItemAsync(item.Idd, false).ConfigureAwait(false);
 
 
 			//Debug.WriteLine($"After Update: {item.Version} - {item.UpdatedAt}");

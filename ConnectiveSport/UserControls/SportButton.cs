@@ -13,7 +13,7 @@ namespace ConnectiveSport
 			{
 				var btn = (SportButton)sender;
 				await btn.ScaleTo(1.2, _animationTime);
-				btn.ScaleTo(1, _animationTime);
+				await btn.ScaleTo(1, _animationTime);
 			};
 		}
 	}

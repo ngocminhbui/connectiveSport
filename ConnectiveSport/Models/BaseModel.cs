@@ -7,7 +7,7 @@ namespace ConnectiveSport
 		[PrimaryKey, AutoIncrement]
 		public int ID { get; set; }
 
-		public string Id { get; set; }
+		public string Idd { get; set; } // Id for AzureService
 
 
 	}

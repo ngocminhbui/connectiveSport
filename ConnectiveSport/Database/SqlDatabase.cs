@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using SQLite;
 using Xamarin.Forms;
+using System.Diagnostics;
+
 namespace ConnectiveSport
 {
 	public class SqlDatabase
@@ -13,13 +15,40 @@ namespace ConnectiveSport
 		public SqlDatabase()
 		{
 			database = new SQLiteAsyncConnection(DependencyService.Get<IFileHelper>().GetLocalFilePath(dbPath));
-			database.CreateTableAsync<League>().Wait();
-			database.CreateTableAsync<Goal>().Wait();
+			try
+			{
+				database.CreateTableAsync<League>().Wait();
+				database.CreateTableAsync<Goal>().Wait();
+				database.CreateTableAsync<Sport>().Wait();
+				database.CreateTableAsync<Athelete>().Wait();
+			}
+			catch (Exception ex)
+			{
+				Debug.WriteLine("Unable to create table async\n" + ex);
 
+			}
 			GoalManager = new SqlGoalManager();
 		}
 
 		public SqlGoalManager GoalManager
+		{
+			get;
+			private set;
+		}
+
+		public SqlSportManager SportManager
+		{
+			get;
+			private set;
+		}
+
+		public SqlAthleteManager AthleteManager
+		{
+			get;
+			private set;
+		}
+
+		public SqlLeagueManager LeagueManager
 		{
 			get;
 			private set;

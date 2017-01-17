@@ -1,12 +1,12 @@
 ﻿using System;
 
 using Xamarin.Forms;
-
+using SQLite;
 namespace ConnectiveSport
 {
-	public class Goal : ContentPage
+	public class Goal : BaseModel
 	{
-		public Sport Sport { get; set; } 
+		public int SportID { get; set; } 
 
 		public string GoalType { get; set; } // string -> GoalType sau nay GoalType co cac loai nhu ngay/ thang / nam
 
@@ -14,10 +14,7 @@ namespace ConnectiveSport
 
 		public bool IsCompleted { get; set; }
 
-		public Goal()
-		{
-			
-		}
+
 	}
 }
 

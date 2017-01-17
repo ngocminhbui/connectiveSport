@@ -4,11 +4,9 @@ using Xamarin.Forms;
 using SQLite;
 namespace ConnectiveSport
 {
-	public class League
+	public class League: BaseModel
 	{
-		[PrimaryKey, AutoIncrement]
-		public int ID { get; set; }
-
+		
 		public string Name { get; set; }
 
 		public string ImageURL { get;  set; }

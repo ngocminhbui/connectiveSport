@@ -25,11 +25,11 @@ namespace ConnectiveSport
 
 
 
-			Sport s = new Sport { Name = "Swimming", ImageURL = "http://www.top10base.com/wp-content/uploads/2014/08/play-sports.png" };
+			//Sport s = new Sport { Name = "Swimming", ImageURL = "http://www.top10base.com/wp-content/uploads/2014/08/play-sports.png" };
 
-			GoalsList.Add(new GoalViewModel(new Goal {Sport=s, GoalType="Day", Content="This is a goal", IsCompleted=false }));
-			GoalsList.Add(new GoalViewModel(new Goal { Sport = s, GoalType = "Day", Content = "This is another goal", IsCompleted = true }));
-			GoalsList.Add(new GoalViewModel(new Goal { Sport = s, GoalType = "Day", Content = "This is another goal", IsCompleted = false }));
+			//GoalsList.Add(new GoalViewModel(new Goal {Sport=s, GoalType="Day", Content="This is a goal", IsCompleted=false }));
+			//GoalsList.Add(new GoalViewModel(new Goal { Sport = s, GoalType = "Day", Content = "This is another goal", IsCompleted = true }));
+			//GoalsList.Add(new GoalViewModel(new Goal { Sport = s, GoalType = "Day", Content = "This is another goal", IsCompleted = false }));
 
 		}
 	}
