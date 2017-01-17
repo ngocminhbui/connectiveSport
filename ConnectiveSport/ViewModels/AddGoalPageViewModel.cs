@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace ConnectiveSport
@@ -11,6 +11,9 @@ namespace ConnectiveSport
 			
 		}
 
+		public List<string> SportsList { get;  set; }
+		public List<string> TypesList { get;  set; }
+
 		internal void AddNewGoal(GoalViewModel s)
 		{
 			String sport = s.Sport;
@@ -19,6 +22,13 @@ namespace ConnectiveSport
 			bool IsCompleted = !s.IsInCompleted;
 
 			//
+		}
+
+		internal void LoadLists()
+		{
+			SportsList.Add("DF");
+			TypesList.Add("DSFDSFDSFF");
+
 		}
 	}
 }
