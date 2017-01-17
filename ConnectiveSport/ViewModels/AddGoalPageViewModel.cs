@@ -10,6 +10,16 @@ namespace ConnectiveSport
 		{
 			
 		}
+
+		internal void AddNewGoal(GoalViewModel s)
+		{
+			String sport = s.Sport;
+			String type = s.Type;
+			String content = s.Content;
+			bool IsCompleted = !s.IsInCompleted;
+
+			//
+		}
 	}
 }
 
