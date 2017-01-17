@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using ConnectiveSport;
 
 namespace ConnectiveSport
 {
@@ -20,10 +21,10 @@ namespace ConnectiveSport
 
 			btnAuthenticate.Clicked += async (sender, e) =>
 			{
-				//await ViewModel.Authenticate();
+                //await ViewModel.Authenticate();
 
-				//this.DisplayAlert("dsjf", "dfkj", "Cancel");
-
+                //this.DisplayAlert("dsjf", "dfkj", "Cancel");
+                await Navigation.PushAsync(new LoginFacebookPage());
 				await Navigation.PushAsync(new SetAliasPage());
 
 
