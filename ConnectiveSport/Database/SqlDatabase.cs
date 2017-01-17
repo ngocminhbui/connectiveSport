@@ -28,6 +28,10 @@ namespace ConnectiveSport
 
 			}
 			GoalManager = new SqlGoalManager();
+			SportManager = new SqlSportManager();
+			AthleteManager = new SqlAthleteManager();
+			LeagueManager = new SqlLeagueManager();
+
 		}
 
 		public SqlGoalManager GoalManager
