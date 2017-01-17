@@ -15,10 +15,6 @@ namespace ConnectiveSport
 			LoadContent();
 			LoadItemsForSportPicker();
 			LoadItemsForTypePicker();
-
-
-			SportPicker.Items.Add("DFJDFJDFJDF");
-			SportPicker.SelectedIndex = 2;
 		}
 
 		void LoadContent()
@@ -30,7 +26,7 @@ namespace ConnectiveSport
 		{
 			foreach (string s in ViewModel.TypesList)
 			{
-				SportPicker.Items.Add(s);
+				Type.Items.Add(s);
 			}
 
 		}
