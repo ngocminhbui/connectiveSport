@@ -9,7 +9,7 @@
 
 	<local:FriendPageXaml.Content>
 
-		
+		<StackLayout x:Name="stackLayout">
 
 		
 		<ListView x:Name="list" AutomationId="leaderboardList" BackgroundColor="White" RowHeight="180" SeparatorColor="{StaticResource grayPrimary}"
@@ -67,7 +67,7 @@
 			</ListView.ItemTemplate>
 		</ListView>
 
-
+	</StackLayout>
 	</local:FriendPageXaml.Content>
 
 	

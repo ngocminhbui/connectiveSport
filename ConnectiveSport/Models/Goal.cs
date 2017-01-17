@@ -1,13 +1,24 @@
 ﻿using System;
-using Newtonsoft.Json;
+
+using Xamarin.Forms;
+
 namespace ConnectiveSport
 {
-	public class Goal : BaseModel
+	public class Goal : ContentPage
 	{
-		public string Text { get; set; }
+		public Sport Sport { get; set; } 
 
-		public bool Complete { get; set; }
+		public string GoalType { get; set; } // string -> GoalType sau nay GoalType co cac loai nhu ngay/ thang / nam
+
+		public string Content { get; set; } 
+
+		public bool IsCompleted { get; set; }
+
+		public Goal()
+		{
+			
+		}
 	}
-
-
 }
+
+
